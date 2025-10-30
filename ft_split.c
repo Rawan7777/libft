@@ -6,7 +6,7 @@
 /*   By: brouane <brouane@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/19 22:49:07 by brouane           #+#    #+#             */
-/*   Updated: 2025/10/29 15:32:45 by brouane          ###   ########.fr       */
+/*   Updated: 2025/10/30 17:59:22 by brouane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static char	**free_array(char **ptr, int i)
 		free(ptr[i]);
 	}
 	free(ptr);
-	return (0);
+	return (NULL);
 }
 
 static int	ft_count_words(char const *str, char c)
@@ -94,11 +94,11 @@ char	**ft_split(char const *s, char c)
 	unsigned int	num_words;
 
 	if (!s)
-		return (0);
+		return (NULL);
 	num_words = ft_count_words(s, c);
 	s2 = (char **)malloc(sizeof(char *) * (num_words + 1));
 	if (!s2)
-		return (0);
+		return (NULL);
 	s2 = ft_split_words(s, c, s2, num_words);
 	return (s2);
 }
