@@ -6,7 +6,7 @@
 /*   By: brouane <brouane@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/20 17:54:27 by brouane           #+#    #+#             */
-/*   Updated: 2025/10/28 21:40:44 by brouane          ###   ########.fr       */
+/*   Updated: 2025/10/31 15:25:37 by brouane          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_itoa(int n)
 {
 	char	*strnum;
 	int		size;
-	int		nb;
+	long	nb;
 
 	nb = n;
 	size = ft_numlen(nb);
